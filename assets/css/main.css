@@ -3508,7 +3508,7 @@ body.landing .dropotron.level-0 {
   margin: 0;
   float: left;
   top: 0;
-  margin-top: 18px;
+  margin-top: 12px;
 }
 
 #header img {
@@ -3744,6 +3744,9 @@ body.is-touch #banner {
   textarea {
     font-size: 13pt;
   }
+  #header h1 {
+    margin-top: 18px;
+  }
 }
 
 /* Large */
@@ -3758,7 +3761,7 @@ body.is-touch #banner {
     font-size: 11.5pt;
   }
   #header h1 {
-    margin-top: 22px;
+    margin-top: 21px;
   }
 
   /* Spotlight */
