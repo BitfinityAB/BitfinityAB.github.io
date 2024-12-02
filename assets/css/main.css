@@ -1930,11 +1930,14 @@ body.landing {
       span {
         margin-left: auto;
         .tagcloud {
-          margin-left: 26%;
+          margin-left: auto;
         }
       }
       > .img-cloud {
         padding-left: 16px;
+        img {
+          margin-bottom: 15px;
+        }
       }
     }
   }
