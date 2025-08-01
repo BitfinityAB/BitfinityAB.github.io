@@ -686,6 +686,12 @@ a {
     }
 }
 
+@media screen and (max-width: 360px) {
+    .client-logo {
+        width: 7rem;
+    }    
+}
+
 .client-card:hover .client-logo {
     transform: scale(1.1);
 }
