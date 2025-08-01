@@ -1,122 +1,212 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Bitfinity AB</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitfinity AB - Software Development Consultancy</title>
+    <meta name="description" content="Software development consultancy with expertise in .NET, cloud solutions, and modern web technologies">
+    <meta name="author" content="Bitfinity AB">
+    
+    <meta property="og:title" content="Bitfinity AB - Software Development Consultancy">
+    <meta property="og:description" content="Software development consultancy with expertise in .NET, cloud solutions, and modern web technologies">
+    <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
-  <body class="is-preload landing">
-    <div class="container medium">
-      <header class="row aln-center">
-        <img id="logo" src="images/logo.png" alt="Bitfinity" />
-      </header>
-      <section class="row center aln-center">
-        <h1>Välkommen till Bitfinity AB!</h1>
-        <p>
-          Vi är ett företag som erbjuder konsulttjänster inom
-          mjukvaruutveckling. Vi har erfarenhet inom flera områden och kan
-          hjälpa dig med allt från webbutveckling till nätverkslösningar. Vi har
-          lång erfarenhet av .NET-utveckling och molnlösningar.
-        </p>
-      </section>
-      <div class="row aln-center center">
-        <div class="col-6">
-          <p>Urval av kompetenser:</p>
-          <span class="content"></span>
-        </div>
-        <div class="col-6">
-          <p>Kunder/arbetsgivare:</p>
-          <div class="img-cloud">
-            <img
-              src="images/brandskyddsforeningen.svg"
-              alt="Brandskyddsföreningen"
-            />
-            <img src="images/ondosis.png" alt="OnDosis" />
-            <img src="images/volvo.svg" alt="Volvo" />
-            <img src="images/decerno.png" alt="Decerno" />
-            <img src="images/annevo.svg" alt="Annevo" />
-            <img src="images/essity.svg" alt="Essity" />
-            <img src="images/hiq.png" alt="HiQ" />
-            <img src="images/cerner.jpg" alt="Cerner" />
-            <img src="images/Siemens.png" alt="Siemens" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer -->
-    <footer id="footer">
-      <p>Kontakt:</p>
-      <ul class="icons">
-        <li>
-          <a
-            href="https://www.linkedin.com/company/bitfinity-se"
-            class="icon brands alt fa-linkedin-in"
-            ><span class="label">LinkedIn</span></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://github.com/BitfinityAB"
-            class="icon brands alt fa-github"
-            ><span class="label">GitHub</span></a
-          >
-        </li>
-        <li>
-          <a href="mailto:info@bitfinity.dev" class="icon solid alt fa-envelope"
-            ><span class="label">Email</span></a
-          >
-        </li>
-      </ul>
-      <ul class="copyright">
-        <li>&copy; Bitfinity AB. All rights reserved.</li>
-        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-      </ul>
-    </footer>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/logo-side.png" alt="Bitfinity Logo"></a>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-    <script>
-      const myTags = [
-        "JavaScript",
-        "CSS",
-        "HTML",
-        "C#",
-        "React",
-        "git",
-        "Node.js",
-        ".NET",
-        "AWS",
-        "Azure",
-        "ASP.NET Core",
-        "MS SQL Server",
-        "CosmosDB",
-        "REST API",
-        "Microservices",
-        "Entity Framework",
-        "CI/CD",
-        ".NET Blazor",
-        "Azure DevOps",
-        "GitLab",
-        "Jenkins",
-        "GitHub",
-        "TypeScript",
-        "Docker",
-        "Kubernetes",
-      ];
-      var tagCloud = TagCloud(".content", myTags, {
-        radius: 150,
-      });
-    </script>
-  </body>
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-icon">
+                        <img src="images/logo_only.png" alt="Bitfinity Logo" class="logo-image" width="150px"/>
+                    </div>
+                    
+                    <h1 class="hero-title">Bitfinity AB</h1>
+                    <p class="hero-subtitle">Software Development Consultancy</p>
+                    <p class="hero-description">
+                        We offer consulting services in software development with expertise in multiple areas. 
+                        From web development to cloud solutions, we have extensive experience in .NET development and modern technologies.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">
+                            View Projects
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12,5 19,12 12,19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competences Section -->
+        <section class="competences">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Competences</h2>
+                    <p class="section-description">
+                        Our expertise spans across modern technologies and proven methodologies to deliver robust software solutions.
+                    </p>
+                </div>
+
+                <div class="competences-grid">
+                    <div class="competence-card">
+                        <h3 class="competence-title">Frontend</h3>
+                        <div class="competence-tags">
+                            <span class="tag tag-frontend">JavaScript</span>
+                            <span class="tag tag-frontend">TypeScript</span>
+                            <span class="tag tag-frontend">React</span>
+                            <span class="tag tag-frontend">CSS</span>
+                            <span class="tag tag-frontend">HTML</span>
+                            <span class="tag tag-frontend">.NET Blazor</span>
+                        </div>
+                    </div>
+
+                    <div class="competence-card">
+                        <h3 class="competence-title">Backend</h3>
+                        <div class="competence-tags">
+                            <span class="tag tag-backend">C#</span>
+                            <span class="tag tag-backend">.NET</span>
+                            <span class="tag tag-backend">ASP.NET Core</span>
+                            <span class="tag tag-backend">Node.js</span>
+                            <span class="tag tag-backend">REST API</span>
+                            <span class="tag tag-backend">Microservices</span>
+                            <span class="tag tag-backend">Entity Framework</span>
+                        </div>
+                    </div>
+
+                    <div class="competence-card">
+                        <h3 class="competence-title">Cloud</h3>
+                        <div class="competence-tags">
+                            <span class="tag tag-cloud">AWS</span>
+                            <span class="tag tag-cloud">Azure</span>
+                        </div>
+                    </div>
+
+                    <div class="competence-card">
+                        <h3 class="competence-title">DevOps</h3>
+                        <div class="competence-tags">
+                            <span class="tag tag-devops">Docker</span>
+                            <span class="tag tag-devops">Kubernetes</span>
+                            <span class="tag tag-devops">CI/CD</span>
+                            <span class="tag tag-devops">Azure DevOps</span>
+                            <span class="tag tag-devops">GitLab</span>
+                            <span class="tag tag-devops">Jenkins</span>
+                            <span class="tag tag-devops">GitHub</span>
+                        </div>
+                    </div>
+
+                    <div class="competence-card">
+                        <h3 class="competence-title">Database</h3>
+                        <div class="competence-tags">
+                            <span class="tag tag-database">MS SQL Server</span>
+                            <span class="tag tag-database">CosmosDB</span>
+                        </div>
+                    </div>
+
+                    <div class="competence-card">
+                        <h3 class="competence-title">Tools</h3>
+                        <div class="competence-tags">
+                            <span class="tag tag-tools">git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="clients">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted by Leading Companies</h2>
+                    <p class="section-description">
+                        We've had the privilege to work with some of the most innovative companies across various industries.
+                    </p>
+                </div>
+
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <div class="client-logo"><img src="images/brandskyddsforeningen.svg" alt="Brandskyddsföreningen Logo"></div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo"><img src="images/ondosis.png" alt="OnDosis Logo"></div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo"><img src="images/volvo.svg" alt="Volvo Logo"></div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo"><img src="images/decerno.png" alt="Decerno Logo"></div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo"><img src="images/annevo.svg" alt="Annevo Logo"></div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo"><img src="images/essity.svg" alt="Essity Logo"></div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo"><img src="images/hiq.png" alt="HiQ Logo"></div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo"><img src="images/cerner.jpg" alt="Cerner Logo"></div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo"><img src="images/siemens.png" alt="Siemens Logo"></div>
+                    </div>
+                </div>
+
+                <div class="clients-footer">
+                    <p>Ready to join this list of satisfied clients? 
+                        <a href="contact.html" class="link">Let's work together</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
