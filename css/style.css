@@ -672,7 +672,7 @@ a {
     padding: 0.5rem;
     background: var(--card);
     border-radius: var(--radius);
-    width: 9rem;
+    width: 8rem;
     height: 4rem;
     display: flex;
     align-items: center;
