@@ -686,6 +686,46 @@ a {
     }
 }
 
+/* Logo switching for dark mode */
+.client-logo {
+    position: relative;
+}
+
+.logo-light {
+    display: block;
+}
+
+.logo-dark {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .logo-light {
+        display: none;
+    }
+    
+    .logo-dark {
+        display: block;
+    }
+    
+    /* CSS filters for logos that don't have dark versions */
+    .client-logo img[src*="brandskyddsforeningen.svg"] {
+        filter: brightness(0) invert(1);
+    }
+    
+    .client-logo img[src*="volvo.svg"] {
+        filter: brightness(0) invert(1);
+    }
+    
+    .client-logo img[src*="annevo.svg"] {
+        filter: none; /* Keep original colors for Annevo */
+    }
+    
+    .client-logo img[src*="essity.svg"] {
+        filter: brightness(0) invert(1);
+    }
+}
+
 @media screen and (max-width: 360px) {
     .client-logo {
         width: 7rem;
